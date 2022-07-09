@@ -2,8 +2,9 @@ import email
 
 
 from werkzeug.security import check_password_hash #codifica el password
+from flask_login import UserMixin
 
-class User():
+class User(UserMixin):
 
     def __init__(self, id,email,password,fullname='')-> None:
         self.id = id
