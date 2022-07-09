@@ -56,6 +56,8 @@ def login():
 def home():
     return render_template('home.html')
 
+#falta poner aqui el modulo de registro
+
 
 
 
